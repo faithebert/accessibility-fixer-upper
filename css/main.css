@@ -11,7 +11,7 @@ html {
 }
 
 a {
-  color: #113c00;
+  color: #568c36;
 }
 
 a:hover {
@@ -20,6 +20,10 @@ a:hover {
 
 a:focus {
   border-width: 3px;
+}
+
+.read-more {
+  color: #113c00;
 }
 
 .masthead {
