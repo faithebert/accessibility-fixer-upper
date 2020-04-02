@@ -10,25 +10,19 @@
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,400i" rel="stylesheet">
 </head>
-<body class="bold">
+<body>
 
   <ul class="skip-links">
-    <li>
-      <a href="#main">Jump to main content</a>
-      <a href="#nav">Jump to navigation</a>
-    </li>
-
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
   </ul>
 
-  <header role="banner">
-
-    <div class="masthead">
+    <header role="banner" class="masthead">
       <div class="wrapper pad-t-1-2 pad-b-1-2 gutter-1-2">
         <h1 class="push-0">Shrubbery, etc.</h1>
       </div>
-      <nav role="navigation" id="nav">
-        <div class="nav">
-          <div class="wrapper gutter-1-2">
+      <nav class="nav" role="navigation" id="nav" tabindex="0">
+        <div class="rapper gutter-1-2">
             <ol class="mega list-group-inline push-0">
               <li><a class="ib gutter-1-2 pad-t-1-2 pad-b-1-2" href="#about">About</a></li>
               <li><a class="ib gutter-1-2 pad-t-1-2 pad-b-1-2" href="#shrubs">Shrubs</a></li>
@@ -36,15 +30,14 @@
               <li><a class="ib gutter-1-2 pad-t-1-2 pad-b-1-2" href="#news">News</a></li>
               <li><a class="ib gutter-1-2 pad-t-1-2 pad-b-1-2" href="#contact">Contact</a></li>
             </ol>
-          </div>
         </div>
       </nav>
-    </div>
+  </header>
 
-    <div>
-      <div class="about push" id="about">
+    <main role="main" id="main" tabindex="0">
+      <section class="about push" id="about" tabindex="0">
         <div class="embed embed-24by10">
-          <img class="embed-item" src="images/shrubs.jpg" alt="Bright green shrubbery">
+          <img class="embed-item" src="images/shrubs.jpg" alt="" role="presentation">
         </div>
         <div class="about-content pad-t-2 pad-b-2">
           <div class="wrapper gutter-1-2">
@@ -53,44 +46,41 @@
             <p class="mega push-0 max-length not-centered">Yes, shrubberies are my trade—I am a shrubber. My name is Roger the Shrubber. I arrange, design, and sell shrubberies.</p>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-  </header>
-
-  <main id="main" role="main">
-    <div>
-      <section class="wrapper gutter-1-2" id="shrubs">
+  <section id="shrubs" tabindex="0">
+    <div class="wrapper gutter-1-2">
         <h2 class="push-0 color-brand-dark">Products</h2>
         <p class="mega max-length not-centered push-0">If you do not tell us where we can buy a shrubbery, my friend and I will say… we will say… “nee”.</p>
         <ul class="grid list-group">
           <li class="unit [ xs-1 s-1 m-1-2 l-1-3 ]">
-            <img class="img-flex push pad-t" src="images/shrub-1.jpg" alt="" aria-details="#grassy-shrubs">
+            <img class="img-flex push pad-t" src="images/shrub-1.jpg" alt="" aria-details="grassy-shrubs">
             <div class="gutter-1-4" id="grassy-shrubs">
               <h3 class="mega push-0">Grassy shrubs</h3>
               <span>Grassy shrubs are pretty much grass, but I group them together in clumps so they look kinda like shrubs.</span>
             </div>
           </li>
           <li class="unit [ xs-1 s-1 m-1-2 l-1-3 ]">
-            <img class="img-flex push pad-t" src="images/shrub-2.jpg" alt="" aria-details="#shrubs-laurels">
+            <img class="img-flex push pad-t" src="images/shrub-2.jpg" alt="" aria-details="shrubs-laurels">
             <div class="gutter-1-4" id="shrubs-laurels">
               <h3 class="mega push-0">Shrubs with laurels</h3>
               <span>Shrubs with laurels have pretty little flowers that bloom sometime during the summer. They’re nice.</span>
             </div>
           </li>
           <li class="unit [ xs-1 s-1 m-1-2 l-1-3 ]">
-            <img class="img-flex push pad-t" src="images/shrub-3.jpg" alt="" aria-details="#level-shrub">
+            <img class="img-flex push pad-t" src="images/shrub-3.jpg" alt="" aria-details="level-shrub">
             <div class="gutter-1-4 pad-b" id="level-shrub">
               <h3 class="mega push-0">Two-level shrubbery</h3>
               <span>Two level shrubbery is where I put two shrubs at different heights, usually with a little path running down the middle.</span>
             </div>
           </li>
         </ul>
+        </div>
       </section>
-    </div>
 
-    <div class="prices pad-t pad-b">
-      <section class="wrapper gutter-1-2" id="prices">
+
+    <section class="prices pad-t pad-b" id="prices" tabindex="0">
+      <div class="wrapper gutter-1-2">
         <h2 class="push-0 color-brand-dark">Prices</h2>
         <span class="mega not-centered push max-length bold">Even those who arrange and design shrubberies are under considerable economic stress at this period in history.</span>
 
@@ -124,8 +114,8 @@
             <td>$90</td>
           </tr>
         </table>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <section class="news pad-t pad-b bold" id="news">
       <article class="wrapper gutter-1-2">
@@ -149,7 +139,7 @@
       </article>
     </section>
 
-    <div class="contact pad-t pad-b bold" id="contact">
+    <section class="contact pad-t pad-b bold" id="contact" tabindex="0">
       <div class="wrapper">
         <h2 class="push-0 color-brand-dark gutter-1-2">Contact</h2>
         <p class="mega max-length not-centered gutter-1-2">We want… a shrubbery!</p>
@@ -177,7 +167,7 @@
           </div>
         </form>
       </div>
-    </div>
+    </section>
   </main>
 
   <footer class="bold" role="contentinfo">
